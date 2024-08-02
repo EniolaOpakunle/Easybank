@@ -2,6 +2,10 @@ import React from "react";
 import bgIntro from "../assets/images/bg-intro-desktop.svg";
 import mockups from "../assets/images/image-mockups.png";
 import onlineIcon from "../assets/images/icon-online.svg";
+import onboardingIcon from '../assets/images/icon-onboarding.svg';
+import budgetingIcon from '../assets/images/icon-budgeting.svg';
+import apiIcon from '../assets/images/icon-api.svg';
+
 
 function Home() {
   return (
@@ -44,28 +48,28 @@ function Home() {
           </div>
           <div className="flex justify-between gap-x-16 mt-16">
             <div className="flex flex-col gap-y-4">
-              <img src={onlineIcon} alt="" className="w-1/4" />
+              <img src={onlineIcon} alt="" className="w-1/5" />
               <p className="text-[24px]">Online Banking</p>
               <p>
                 Our web and mobile applications allow you to keep track of your finances wherever you are in the world
               </p>
             </div>
             <div className="flex flex-col gap-y-4">
-              <img src={onlineIcon} alt="" className="w-1/4" />
+              <img src={budgetingIcon} alt="" className="w-1/5" />
               <p className="text-[24px]">Simple Budgeting</p>
               <p>
                 See exactly where your money goes each month. Receive notifications when you're close to hitting your limits
               </p>
             </div>
             <div className="flex flex-col gap-y-4">
-              <img src={onlineIcon} alt="" className="w-1/4" />
+              <img src={onboardingIcon} alt="" className="w-1/5" />
               <p className="text-[24px]">Fast Onboarding</p>
               <p>
                 We don't do branches. Open your account in minutes online and start taking control of your finances right away.
               </p>
             </div>
             <div className="flex flex-col gap-y-4">
-              <img src={onlineIcon} alt="" className="w-1/4" />
+              <img src={apiIcon} alt="" className="w-1/5" />
               <p className="text-[24px]">Open Api</p>
               <p>
                 Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.
