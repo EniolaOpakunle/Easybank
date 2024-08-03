@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div className="bg-blue-300">
       <div className="w-4/5 m-auto py-20">
-        <div className="flex flex-col gap-y-5 lg:grid grid-cols-4">
+        <div className="flex flex-col gap-y-5 md:grid grid-cols-4">
           <div className="flex flex-col gap-y-5 lg:gap-y-0 justify-between">
             <img src={logo} alt="" className="w-1/2  m-auto lg:m-0 " />
             <div className="flex gap-x-5  m-auto lg:m-0 ">
