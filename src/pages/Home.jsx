@@ -27,7 +27,7 @@ function Home() {
               more.
             </p>
             <p>
-              <button className="bg-black text-white px-7 py-2 rounded-full">
+              <button className="text-white px-7 py-2 rounded-full" style={{ background: 'linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%))' }}>
                 Request Invite
               </button>
             </p>
@@ -38,7 +38,7 @@ function Home() {
           </div>
           <div className="lg:hidden w-full">
             <img src={bgIntro2} alt="" className="w-full -mt-10" />
-            <img src={mockups} alt="" className="-mt-[100%]" />
+            <img src={mockups} alt="" className="m-auto -mt-[100%] " />
           </div>
         </div>
       </div>
@@ -55,9 +55,9 @@ function Home() {
             </p>
             <p>Control your finances like never before.</p>
           </div>
-          <div className="flex flex-col gap-y-12 md:grid md:grid-cols-2 md:gap-x-10 grid-cols-4  lg:justify-between  lg:gap-x-16 mt-16">
+          <div className="flex flex-col gap-y-12 md:grid md:grid-cols-2 md:gap-x-10 lg:grid-cols-4  lg:justify-between  lg:gap-x-16 mt-16">
             <div className="flex flex-col gap-y-4">
-              <img src={onlineIcon} alt="" className="w-1/5 m-auto lg:m-0" />
+              <img src={onlineIcon} alt="" className="w-1/5 m-auto md:m-0" />
               <p className="text-[24px] font-[400]">Online Banking</p>
               <p>
                 Our web and mobile applications allow you to keep track of your
@@ -65,7 +65,7 @@ function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-y-4">
-              <img src={budgetingIcon} alt="" className="w-1/5 m-auto lg:m-0" />
+              <img src={budgetingIcon} alt="" className="w-1/5 m-auto md:m-0" />
               <p className="text-[24px] font-[400]">Simple Budgeting</p>
               <p>
                 See exactly where your money goes each month. Receive
@@ -76,7 +76,7 @@ function Home() {
               <img
                 src={onboardingIcon}
                 alt=""
-                className="w-1/5 m-auto lg:m-0"
+                className="w-1/5 m-auto md:m-0"
               />
               <p className="text-[24px] font-[400]">Fast Onboarding</p>
               <p>
@@ -85,7 +85,7 @@ function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-y-4">
-              <img src={apiIcon} alt="" className="w-1/5 m-auto lg:m-0" />
+              <img src={apiIcon} alt="" className="w-1/5 m-auto md:m-0" />
               <p className="text-[24px] font-[400]">Open Api</p>
               <p>
                 Manage your savings, investments, pension, and much more from
@@ -98,10 +98,10 @@ function Home() {
       {/* latest articles */}
       <div className="bg-gray-50">
         <div className="w-10/12 lg:w-4/5 m-auto py-20 flex flex-col gap-y-10">
-          <p className="text-[40px] text-center lg:text-left">
+          <p className="text-[40px] text-center md:text-left">
             Latest Articles
           </p>
-          <div className="flex flex-col gap-y-7 md:grid md:grid-cols-2 grid-cols-4 gap-x-10">
+          <div className="flex flex-col gap-y-7 md:grid md:grid-cols-2 lg:grid-cols-4 gap-x-10">
             <div className="rounded-lg bg-white">
               <img
                 src={currencyImage}
@@ -110,7 +110,7 @@ function Home() {
               />
               <div className="p-7 lg:pr-10 flex flex-col gap-y-3">
                 <p className="text-[12px] text-gray-400">By Claire Robinson</p>
-                <p className="text-[20px] leading-tight">
+                <p className="text-[20px] leading-tight hover:text-LimeGreen transition-colors duration-300 cursor-pointer ">
                   Receive money in any currency with no fees
                 </p>
                 <p className="text-[14px] text-gray-500">
@@ -127,7 +127,7 @@ function Home() {
               />
               <div className="p-7 lg:pr-10 flex flex-col gap-y-3">
                 <p className="text-[12px] text-gray-400">By Claire Robinson</p>
-                <p className="text-[20px] leading-tight">
+                <p className="text-[20px] leading-tight hover:text-LimeGreen transition-colors duration-300 cursor-pointer">
                   Receive money in any currency with no fees
                 </p>
                 <p className="text-[14px] text-gray-500">
@@ -144,7 +144,7 @@ function Home() {
               />
               <div className="p-7 lg:pr-10 flex flex-col gap-y-3">
                 <p className="text-[12px] text-gray-400">By Claire Robinson</p>
-                <p className="text-[20px] leading-tight">
+                <p className="text-[20px] leading-tight hover:text-LimeGreen transition-colors duration-300 cursor-pointer">
                   Receive money in any currency with no fees
                 </p>
                 <p className="text-[14px] text-gray-500">
@@ -161,7 +161,7 @@ function Home() {
               />
               <div className="p-7 lg:pr-10 flex flex-col gap-y-3">
                 <p className="text-[12px] text-gray-400">By Claire Robinson</p>
-                <p className="text-[20px] leading-tight">
+                <p className="text-[20px] leading-tight hover:text-LimeGreen transition-colors duration-300 cursor-pointer">
                   Receive money in any currency with no fees
                 </p>
                 <p className="text-[14px] text-gray-500">

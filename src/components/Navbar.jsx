@@ -31,10 +31,10 @@ function Navbar() {
           </a>
         </div>
         <div className="hidden lg:flex gap-x-3">
-          <button className="bg-black text-white px-7 py-2 rounded-full">
+          <button className=" text-white px-7 py-2 rounded-full" style={{ background: 'linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%))' }}>
             Request Invite
           </button>
-          <button className="bg-black text-white px-7 py-2 rounded-full">
+          <button className="text-white px-7 py-2 rounded-full" style={{ background: 'linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%))' }}>
             Create an account
           </button>
         </div>
