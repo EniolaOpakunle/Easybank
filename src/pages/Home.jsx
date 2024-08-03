@@ -1,5 +1,6 @@
 import React from "react";
 import bgIntro from "../assets/images/bg-intro-desktop.svg";
+import bgIntro2 from "../assets/images/bg-intro-mobile.svg";
 import mockups from "../assets/images/image-mockups.png";
 import onlineIcon from "../assets/images/icon-online.svg";
 import onboardingIcon from "../assets/images/icon-onboarding.svg";
@@ -15,9 +16,9 @@ function Home() {
     <div className="w-full">
       {/* Hero section */}
       <div className=" bg-gray-50">
-        <div className="grid grid-cols-2 items-center">
-          <div className="ml-36 w-3/5 flex flex-col gap-y-5">
-            <p className="text-[56px] font-[500] leading-tight">
+        <div className="flex flex-col-reverse lg:grid grid-cols-2 items-center">
+          <div className="w-10/12 m-auto lg:ml-36 lg:w-3/5 flex flex-col gap-y-5 text-center lg:text-left">
+            <p className="text-[56px] font-[500] leading-tight ">
               Next generation digital banking
             </p>
             <p>
@@ -31,15 +32,19 @@ function Home() {
               </button>
             </p>
           </div>
-          <div className="relative">
+          <div className="hidden lg:block relative">
             <img src={bgIntro} alt="" className="-mt-20 h-[800px]" />
+            <img src={mockups} alt="" className="absolute -mt-[100%]" />
+          </div>
+          <div className="block relative lg:hidden w-full">
+            <img src={bgIntro2} alt=""  className="w-full -mt-10"/>
             <img src={mockups} alt="" className="absolute -mt-[100%]" />
           </div>
         </div>
       </div>
       {/* why choose us? */}
       <div className="bg-gray-100 pb-20">
-        <div className=" flex flex-col gap-y-4 w-4/5 m-auto pt-32">
+        <div className=" flex flex-col gap-y-4 w-10/12 lg:w-4/5 m-auto pt-32 text-center lg:text-left">
           <div>
             <p className="text-[40px]">Why choose Easybank?</p>
           </div>
@@ -50,9 +55,9 @@ function Home() {
             </p>
             <p>Control your finances like never before.</p>
           </div>
-          <div className="flex justify-between gap-x-16 mt-16">
+          <div className="flex flex-col gap-y-12 lg:flex-row lg:justify-between  lg:gap-x-16 mt-16">
             <div className="flex flex-col gap-y-4">
-              <img src={onlineIcon} alt="" className="w-1/5" />
+              <img src={onlineIcon} alt="" className="w-1/5 m-auto lg:m-0"/>
               <p className="text-[24px]">Online Banking</p>
               <p>
                 Our web and mobile applications allow you to keep track of your
@@ -60,7 +65,7 @@ function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-y-4">
-              <img src={budgetingIcon} alt="" className="w-1/5" />
+              <img src={budgetingIcon} alt="" className="w-1/5 m-auto lg:m-0" />
               <p className="text-[24px]">Simple Budgeting</p>
               <p>
                 See exactly where your money goes each month. Receive
@@ -68,7 +73,7 @@ function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-y-4">
-              <img src={onboardingIcon} alt="" className="w-1/5" />
+              <img src={onboardingIcon} alt="" className="w-1/5 m-auto lg:m-0" />
               <p className="text-[24px]">Fast Onboarding</p>
               <p>
                 We don't do branches. Open your account in minutes online and
@@ -76,7 +81,7 @@ function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-y-4">
-              <img src={apiIcon} alt="" className="w-1/5" />
+              <img src={apiIcon} alt="" className="w-1/5 m-auto lg:m-0" />
               <p className="text-[24px]">Open Api</p>
               <p>
                 Manage your savings, investments, pension, and much more from
@@ -88,12 +93,12 @@ function Home() {
       </div>
       {/* latest articles */}
       <div className="bg-gray-50">
-        <div className="w-4/5 m-auto py-20 flex flex-col gap-y-10">
-          <p className="text-[40px]">Latest Articles</p>
-          <div className="grid grid-cols-4 gap-x-10">
+        <div className="w-10/12 lg:w-4/5 m-auto py-20 flex flex-col gap-y-10">
+          <p className="text-[40px] text-center lg:text-left">Latest Articles</p>
+          <div className="flex flex-col gap-y-5 lg:grid grid-cols-4 gap-x-10">
             <div className="rounded-lg bg-white">
-              <img src={currencyImage} alt="" className="rounded-t-lg h-[200px]" />
-              <div className="p-7 pr-10 flex flex-col gap-y-3">
+              <img src={currencyImage} alt="" className="rounded-t-lg h-[200px] w-full" />
+              <div className="p-7 lg:pr-10 flex flex-col gap-y-3">
                 <p className="text-[12px] text-gray-400">By Claire Robinson</p>
                 <p className="text-[20px] leading-tight">Receive money in any currency with no fees</p>
                 <p className="text-[14px] text-gray-500">
@@ -103,8 +108,8 @@ function Home() {
               </div>
             </div>
             <div className="rounded-lg bg-white">
-              <img src={restaurantImage} alt="" className="rounded-t-lg h-[200px]" />
-              <div className="p-7 pr-10 flex flex-col gap-y-3">
+              <img src={restaurantImage} alt="" className="rounded-t-lg h-[200px] w-full" />
+              <div className="p-7 lg:pr-10 flex flex-col gap-y-3">
                 <p className="text-[12px] text-gray-400">By Claire Robinson</p>
                 <p className="text-[20px] leading-tight">Receive money in any currency with no fees</p>
                 <p className="text-[14px] text-gray-500">
@@ -114,8 +119,8 @@ function Home() {
               </div>
             </div>
             <div className="rounded-lg bg-white">
-              <img src={planeImage} alt="" className="rounded-t-lg h-[200px]" />
-              <div className="p-7 pr-10 flex flex-col gap-y-3">
+              <img src={planeImage} alt="" className="rounded-t-lg h-[200px] w-full" />
+              <div className="p-7 lg:pr-10 flex flex-col gap-y-3">
                 <p className="text-[12px] text-gray-400">By Claire Robinson</p>
                 <p className="text-[20px] leading-tight">Receive money in any currency with no fees</p>
                 <p className="text-[14px] text-gray-500">
@@ -125,8 +130,8 @@ function Home() {
               </div>
             </div>
             <div className="rounded-lg bg-white">
-              <img src={confettiImage} alt="" className="rounded-t-lg h-[200px]" />
-              <div className="p-7 pr-10 flex flex-col gap-y-3">
+              <img src={confettiImage} alt="" className="rounded-t-lg h-[200px] w-full" />
+              <div className="p-7 lg:pr-10 flex flex-col gap-y-3">
                 <p className="text-[12px] text-gray-400">By Claire Robinson</p>
                 <p className="text-[20px] leading-tight">Receive money in any currency with no fees</p>
                 <p className="text-[14px] text-gray-500">
