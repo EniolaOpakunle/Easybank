@@ -21,10 +21,10 @@ function Footer() {
             />
             <div className="flex gap-x-5 md:gap-x-3  m-auto md:m-0 ">
              <a href=""> <img src={facebookIcon} alt="" className=" hover:text-LimeGreen"/></a>
-              <img src={youtubeIcon} alt="" />
-              <img src={twitterIcon} alt="" />
-              <img src={pinterestIcon} alt="" />
-              <img src={instagramIcon} alt="" />
+              <a href=""><img src={youtubeIcon} alt="" /></a>
+              <a href=""><img src={twitterIcon} alt="" /></a>
+              <a href=""><img src={pinterestIcon} alt="" /></a>
+              <a href=""><img src={instagramIcon} alt="" /></a>
             </div>
           </div>
           <div className="flex flex-col text-center md:text-left gap-y-5">

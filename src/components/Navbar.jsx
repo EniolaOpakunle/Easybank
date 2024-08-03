@@ -14,19 +14,19 @@ function Navbar() {
           <img src={logo} alt="" />
         </div>
         <div className="hidden lg:flex gap-x-10">
-          <a href="" className="text-gray-500 hover:text-black no-underline">
+          <a href="" className="text-gray-500 hover:text-black no-underline transition-colors duration-300">
             Home
           </a>
-          <a href="" className="text-gray-500 hover:text-black no-underline">
+          <a href="" className="text-gray-500 hover:text-black no-underline transition-colors duration-300">
             About
           </a>
-          <a href="" className="text-gray-500 hover:text-black no-underline">
+          <a href="" className="text-gray-500 hover:text-black no-underline transition-colors duration-300">
             Contact
           </a>
-          <a href="" className="text-gray-500 hover:text-black no-underline">
+          <a href="" className="text-gray-500 hover:text-black no-underline transition-colors duration-300">
             Blog
           </a>
-          <a href="" className="text-gray-500 hover:text-black no-underline">
+          <a href="" className="text-gray-500 hover:text-black no-underline transition-colors duration-300">
             Careers
           </a>
         </div>
